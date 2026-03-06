@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; scroll-behavior: smooth; }
         .glass-nav { background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid #1e293b; }
         .hero-bg { background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0f172a 100%); }
-        .skill-card:hover { border-color: #3b82f6; transform: translateY(-2px); transition: all 0.3s ease; }
+        .section-card { background: #1e293b; border: 1px solid #334155; transition: all 0.3s ease; }
+        .section-card:hover { border-color: #3b82f6; transform: translateY(-5px); }
     </style>
 </head>
 <body class="scroll-smooth">
@@ -24,28 +25,21 @@
                 <a href="#skills" class="hover:text-white transition">Skills</a>
                 <a href="#experience" class="hover:text-white transition">Experience</a>
                 <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#education" class="hover:text-white transition">Education</a>
             </div>
-            <a href="mailto:pankajsaraswat68@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg text-sm font-bold transition">Get In Touch</a>
+            <a href="mailto:rohitsaraswat446@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg text-sm font-bold transition">Get In Touch</a>
         </div>
     </nav>
 
-    <section id="home" class="min-h-screen flex items-center justify-center hero-bg pt-20 px-6">
-        <div class="max-w-5xl text-center">
-            <h1 class="text-4xl md:text-7xl font-black mb-4 tracking-tighter text-white">
-                Pankaj Saraswat
-            </h1>
-            
+    <section id="home" class="min-h-screen flex items-center justify-center hero-bg pt-20 px-6 text-center">
+        <div class="max-w-5xl">
+            <h1 class="text-4xl md:text-7xl font-black mb-4 tracking-tighter text-white">Pankaj Saraswat</h1>
             <h2 class="text-2xl md:text-4xl font-extrabold mb-8 tracking-tight leading-tight">
                 Cloud & DevOps Engineer <br/>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 text-xl md:text-2xl font-semibold italic">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 text-xl md:text-2xl font-semibold italic uppercase tracking-wider">
                     specializing in AWS Infrastructure, Containerization, and Automated CI/CD Pipelines.
                 </span>
             </h2>
-            
-            <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-                I build and automate highly available cloud environments. Focused on transforming legacy workflows into modern DevSecOps architectures using AWS, Docker, and Terraform.
-            </p>
-            
             <div class="flex justify-center gap-4">
                 <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-bold transition shadow-lg shadow-blue-500/20">View Projects</a>
                 <a href="#experience" class="border border-slate-700 hover:bg-slate-800 px-8 py-3 rounded-full font-bold transition">Experience</a>
@@ -53,60 +47,154 @@
         </div>
     </section>
 
+    <section id="skills" class="py-24 max-w-7xl mx-auto px-6">
+        <h3 class="text-3xl font-bold mb-16 text-center text-blue-500 uppercase italic underline decoration-2 underline-offset-8">Technical Arsenal</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="p-8 rounded-2xl section-card">
+                <h4 class="text-xl font-bold mb-6 flex items-center gap-3 text-orange-400"><i class="fa-brands fa-aws"></i> Cloud Infra</h4>
+                <ul class="text-slate-400 text-sm space-y-3">
+                    <li>▹ AWS: EC2, EKS, ECS, S3, RDS, CloudFormation</li>
+                    <li>▹ VPC, IAM, & Advanced Cloud Networking</li>
+                    <li>▹ Static Hosting & Content Delivery (S3/CloudFront)</li>
+                    <li>▹ Distributed Production Environments</li>
+                </ul>
+            </div>
+            <div class="p-8 rounded-2xl section-card">
+                <h4 class="text-xl font-bold mb-6 flex items-center gap-3 text-blue-400"><i class="fa-solid fa-cubes"></i> Orchestration</h4>
+                <ul class="text-slate-400 text-sm space-y-3">
+                    <li>▹ Kubernetes Administration (Scaling, Updates)</li>
+                    <li>▹ Infrastructure as Code (Terraform/CloudFormation)</li>
+                    <li>▹ Docker Container Lifecycle Management</li>
+                    <li>▹ Root Cause Analysis & Production Troubleshooting</li>
+                </ul>
+            </div>
+            <div class="p-8 rounded-2xl section-card">
+                <h4 class="text-xl font-bold mb-6 flex items-center gap-3 text-emerald-400"><i class="fa-solid fa-rocket"></i> CI/CD & Automation</h4>
+                <ul class="text-slate-400 text-sm space-y-3">
+                    <li>▹ Jenkins & GitLab CI/CD Pipeline Maintenance</li>
+                    <li>▹ End-to-End Build, Test, & Release Workflows</li>
+                    <li>▹ Linux Server Automated App Deployments</li>
+                    <li>▹ Bash & PowerShell Infrastructure Scripting</li>
+                </ul>
+            </div>
+            <div class="p-8 rounded-2xl section-card lg:col-span-3">
+                <h4 class="text-xl font-bold mb-6 flex items-center gap-3 text-yellow-500"><i class="fa-solid fa-shield-halved"></i> Monitoring & Security</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-400 text-sm">
+                    <p>▹ Observability: Prometheus, Grafana, ELK Stack, Splunk</p>
+                    <p>▹ Security: SSL/TLS Installation, Renewals, & HTTPS Configuration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="experience" class="py-24 bg-slate-900/50 px-6">
         <div class="max-w-5xl mx-auto">
-            <h3 class="text-3xl font-bold mb-12 border-l-4 border-blue-500 pl-4 uppercase text-blue-500">Professional Experience</h3>
+            <h3 class="text-3xl font-bold mb-12 border-l-4 border-blue-500 pl-4 uppercase text-blue-500">Professional Journey</h3>
             <div class="space-y-16">
-                
-                <div class="group">
-                    <div class="flex flex-col md:flex-row md:justify-between mb-4">
-                        <h4 class="text-xl font-bold text-white uppercase">SOC Engineer (L3 Level Tasks)</h4>
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-bold text-white uppercase">SOC Engineer (L3 Tasks)</h4>
                         <span class="text-slate-500 font-mono text-sm">July 2024 – Present</span>
                     </div>
-                    <p class="text-slate-300 font-medium mb-4">IDX Pvt. Ltd | Vadodara, Gujarat</p>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 text-slate-400 text-sm">
-                        <li><span class="text-blue-500">▹</span> Deploy/Optimize AWS Infra (EC2, S3, VPC, IAM, ASG)</li>
-                        <li><span class="text-blue-500">▹</span> Full Site Creation & Domain Mapping (Route 53/Cloudflare)</li>
-                        <li><span class="text-blue-500">▹</span> CloudFront Distribution & CDN Performance Tuning</li>
-                        <li><span class="text-blue-500">▹</span> Automated Deployment of Code via Jenkins CI/CD</li>
-                        <li><span class="text-blue-500">▹</span> Lambda & Event Bridge Operational Automation</li>
-                        <li><span class="text-blue-500">▹</span> SSL/TLS Certificate Deployment & Renewals</li>
+                    <p class="text-blue-400 font-semibold mb-4 underline">IDX Pvt. Ltd | Vadodara, Gujarat</p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-400 text-sm">
+                        <li>▹ Deploy/Optimize AWS Infra (EC2, S3, VPC, ASG, ALB)</li>
+                        <li>▹ Site Creation & Domain Mapping (Route 53/Cloudflare)</li>
+                        <li>▹ CloudFront Distribution & CDN Performance Optimization</li>
+                        <li>▹ Automated Jenkins CI/CD Deployment Workflows</li>
+                        <li>▹ Lambda & Event Bridge Task Automation</li>
+                        <li>▹ SSL/TLS Certificate Lifecycle & Renewal</li>
                     </ul>
                 </div>
-
-                <div class="group border-t border-slate-800 pt-12">
-                    <div class="flex flex-col md:flex-row md:justify-between mb-4">
+                <div class="border-t border-slate-800 pt-12">
+                    <div class="flex justify-between items-start mb-4">
                         <h4 class="text-xl font-bold text-slate-200 uppercase">Associate SOC Engineer</h4>
                         <span class="text-slate-500 font-mono text-sm">July 2023 – June 2024</span>
                     </div>
-                    <p class="text-slate-400 font-medium mb-4">IDX Pvt. Ltd</p>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 text-slate-400 text-sm">
-                        <li><span class="text-blue-500">▹</span> Traffic Analysis & Threat Investigation (WAF/Kibana)</li>
-                        <li><span class="text-blue-500">▹</span> Resolved L2/L3 Security Alerts & Incident Anomalies</li>
-                        <li><span class="text-blue-500">▹</span> Log Analysis for Security Events & Operational Issues</li>
-                        <li><span class="text-blue-500">▹</span> SSL/TLS Expiry Tracking & Validation Management</li>
-                        <li><span class="text-blue-500">▹</span> Vulnerability Validation & Security Hardening Checks</li>
-                        <li><span class="text-blue-500">▹</span> Coordinated Incident Mitigation with DevOps Teams</li>
+                    <p class="text-slate-400 font-semibold mb-4">IDX Pvt. Ltd</p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-400 text-sm text-slate-400">
+                        <li>▹ Traffic Analysis & Threat Investigation (WAF/Kibana)</li>
+                        <li>▹ Investigated L2/L3 Security Alerts & Anomalies</li>
+                        <li>▹ Log Analysis for Security Event Detection</li>
+                        <li>▹ Managed SSL/TLS Validation & Expiry Tracking</li>
+                        <li>▹ Uptime, Traffic, & Security Stakeholder Reporting</li>
+                        <li>▹ Security Hardening & Vulnerability Validation</li>
                     </ul>
                 </div>
-
-                <div class="group border-t border-slate-800 pt-12">
-                    <div class="flex flex-col md:flex-row md:justify-between mb-4">
-                        <h4 class="text-xl font-bold text-slate-400 uppercase">Trainee SOC Engineer</h4>
+                <div class="border-t border-slate-800 pt-12">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-bold text-slate-400 uppercase tracking-tight">Trainee SOC Engineer</h4>
                         <span class="text-slate-500 font-mono text-sm">Feb 2023 – June 2023</span>
                     </div>
                     <p class="text-slate-500 font-medium mb-4">IDX Pvt. Ltd</p>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 text-slate-500 text-sm">
-                        <li><span class="text-blue-500">▹</span> Website & Server Availability/Uptime Monitoring</li>
-                        <li><span class="text-blue-500">▹</span> L1/L2 Alert Triage & Incident Escalation per Runbooks</li>
-                        <li><span class="text-blue-500">▹</span> Traffic/Log Monitoring via Security Dashboards</li>
-                        <li><span class="text-blue-500">▹</span> Generated Daily/Weekly Website Uptime Reports</li>
-                        <li><span class="text-blue-500">▹</span> SSL Certificate Renewal Notifications & Tracking</li>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-500 text-sm italic">
+                        <li>▹ Website & Server Availability/Uptime Monitoring</li>
+                        <li>▹ L1/L2 Alert Triage & Incident Escalation</li>
+                        <li>▹ Security Dashboard Traffic & Log Monitoring</li>
+                        <li>▹ Prepared Daily/Weekly Availability Reports</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="projects" class="py-24 max-w-7xl mx-auto px-6">
+        <h3 class="text-3xl font-bold mb-16 text-center text-blue-500">ENGINEERING PROJECTS</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-2xl section-card">
+                <h4 class="text-xl font-bold text-blue-400 mb-4 uppercase">WSL to AWS Scaling</h4>
+                <p class="text-slate-400 text-sm mb-6">Deep dive into modern DevOps: transitioning full-stack apps from WSL development to live AWS EC2 production.</p>
+                <div class="flex flex-wrap gap-2 text-[10px] font-bold text-slate-500 uppercase"><span>#EC2</span> <span>#Docker</span> <span>#WSL2</span></div>
+            </div>
+            <div class="p-8 rounded-2xl section-card">
+                <h4 class="text-xl font-bold text-blue-400 mb-4 uppercase">Django + Nginx Stack</h4>
+                <p class="text-slate-400 text-sm mb-6">Containerized Django application with MySQL backend and Nginx reverse proxy using Docker Bridge Networks.</p>
+                <div class="flex flex-wrap gap-2 text-[10px] font-bold text-slate-500 uppercase"><span>#Nginx</span> <span>#Django</span> <span>#MySQL</span></div>
+            </div>
+            <div class="p-8 rounded-2xl section-card">
+                <h4 class="text-xl font-bold text-blue-400 mb-4 uppercase">Jenkins Monitoring</h4>
+                <p class="text-slate-400 text-sm mb-6">Integrated Site24x7 with Jenkins for automated SSL monitor notifications and secret token generation.</p>
+                <div class="flex flex-wrap gap-2 text-[10px] font-bold text-slate-500 uppercase"><span>#CI/CD</span> <span>#Automation</span> <span>#Site24x7</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-24 bg-slate-900/50 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div>
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 uppercase tracking-tighter"><i class="fa-solid fa-graduation-cap text-blue-500"></i> Education</h3>
+                <div class="space-y-8 border-l-2 border-slate-800 pl-8">
+                    <div>
+                        <p class="font-bold text-lg">Masters of Computer Application</p>
+                        <p class="text-blue-400 font-mono text-sm">2021 – 2023</p>
+                        <p class="text-slate-400">Sage University Gwalior</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-lg">Bachelor of Computer Application</p>
+                        <p class="text-blue-400 font-mono text-sm">2018 – 2021</p>
+                        <p class="text-slate-400">Jiwaji University Gwalior</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 uppercase tracking-tighter"><i class="fa-solid fa-award text-emerald-500"></i> Certifications</h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-500"></i> AWS Cloud Practitioner</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-500"></i> AWS Associate Foundation Badge</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-500"></i> Oracle Certified Foundations Associate</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-900 text-center text-slate-500">
+        <div class="flex justify-center gap-6 mb-8 text-xl">
+            <a href="mailto:rohitsaraswat446@gmail.com" class="hover:text-blue-500 transition"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" class="hover:text-blue-500 transition"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p class="text-xs uppercase tracking-widest">© 2026 Pankaj Saraswat | Built for Cloud & DevOps Excellence</p>
+    </footer>
 
 </body>
 </html>
